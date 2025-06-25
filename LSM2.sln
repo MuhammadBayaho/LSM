@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSM2", "LSM2.csproj", "{F7209C41-712A-456E-81CD-3B998FD1703A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemManagementTutorial", "SystemManagementTutorial/SystemManagementTutorial.csproj", "{D7B1C662-9C3A-4946-9BFC-6169C8AAAE01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +16,12 @@ Global
 		{F7209C41-712A-456E-81CD-3B998FD1703A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7209C41-712A-456E-81CD-3B998FD1703A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7209C41-712A-456E-81CD-3B998FD1703A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7209C41-712A-456E-81CD-3B998FD1703A}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+                {F7209C41-712A-456E-81CD-3B998FD1703A}.Release|Any CPU.Build.0 = Release|Any CPU
+                {D7B1C662-9C3A-4946-9BFC-6169C8AAAE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+                {D7B1C662-9C3A-4946-9BFC-6169C8AAAE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+                {D7B1C662-9C3A-4946-9BFC-6169C8AAAE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+                {D7B1C662-9C3A-4946-9BFC-6169C8AAAE01}.Release|Any CPU.Build.0 = Release|Any CPU
+        EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
