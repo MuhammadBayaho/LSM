@@ -2,7 +2,10 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <IsPackable>false</IsPackable>
+<<<<<<< HEAD
+=======
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+>>>>>>> dbe7ede0baee7e9b1efa70f6d723820a0bc80ad7
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -15,17 +18,23 @@
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
 
    
 
     <Compile Remove="obj\**\*.cs" />
   </ItemGroup>
   <ItemGroup>
+>>>>>>> dbe7ede0baee7e9b1efa70f6d723820a0bc80ad7
     <Compile Include="..\Controllers\**\*.cs" />
     <Compile Include="..\Services\**\*.cs" />
     <Compile Include="..\Models\**\*.cs" />
     <Compile Include="..\DTOs\**\*.cs" />
     <Compile Include="..\Data\**\*.cs" />
+<<<<<<< HEAD
+=======
 
+>>>>>>> dbe7ede0baee7e9b1efa70f6d723820a0bc80ad7
   </ItemGroup>
 </Project>
