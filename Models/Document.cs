@@ -7,6 +7,6 @@ namespace LMSApp.Models
         public string FilePath { get; set; } = "";
 
         public int CourseId { get; set; }
-        public Course Course { get; set; }
+        public Course? Course { get; set; }
     }
 }
