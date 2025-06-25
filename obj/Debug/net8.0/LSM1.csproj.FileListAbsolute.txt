@@ -1,0 +1,8 @@
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.csproj.AssemblyReference.cache
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.GeneratedMSBuildEditorConfig.editorconfig
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.AssemblyInfoInputs.cache
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.AssemblyInfo.cs
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.csproj.CoreCompileInputs.cache
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.MvcApplicationPartsAssemblyInfo.cs
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.MvcApplicationPartsAssemblyInfo.cache
+S:\c\4-2 BAHAR\SOFTWARE DEVELOPMENT\LSM1\obj\Debug\net8.0\LSM1.sourcelink.json
