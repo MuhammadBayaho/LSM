@@ -14,10 +14,6 @@
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Controllers\**\*.cs" />
-    <Compile Include="..\Services\**\*.cs" />
-    <Compile Include="..\Models\**\*.cs" />
-    <Compile Include="..\DTOs\**\*.cs" />
-    <Compile Include="..\Data\**\*.cs" />
+    <ProjectReference Include="..\LSM.csproj" />
   </ItemGroup>
 </Project>
