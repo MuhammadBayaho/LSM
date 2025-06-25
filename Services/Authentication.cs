@@ -33,6 +33,6 @@ public class AuthService : IAuthService
         if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
             return null;
 
-        return "Login successful"; // Token üretimi eklenebilir
+        return "Login successful"; // Token generation can be added
     }
 }
