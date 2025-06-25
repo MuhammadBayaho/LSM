@@ -1,4 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using LMSApp.Models;
+
+namespace LMSApp.Data
+{
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
@@ -31,4 +35,5 @@ public class AppDbContext : DbContext
             .WithOne(a => a.Course)
             .HasForeignKey(a => a.CourseId);
     }
+}
 }
