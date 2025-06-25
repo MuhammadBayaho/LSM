@@ -9,6 +9,7 @@ Key Features:
 - Create and join courses or study groups
 - Upload and download course materials
 - Shared notes with group members
+- Manage course assignments
 - Task and deadline reminders through email
 Software Requirements:
 Functional:
