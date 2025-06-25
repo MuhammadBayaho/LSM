@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Mvc;
+using LMSApp.Services;
+using LMSApp.DTOs;
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase

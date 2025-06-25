@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using LMSApp.Data;
+using LMSApp.Models;
+using LMSApp.DTOs;
+using System.Threading.Tasks;
 public class AuthService : IAuthService
 {
     private readonly AppDbContext _context;
@@ -33,6 +38,6 @@ public class AuthService : IAuthService
         if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
             return null;
 
-        return "Login successful"; // Token üretimi eklenebilir
+        return "Login successful"; // Token Ã¼retimi eklenebilir
     }
 }

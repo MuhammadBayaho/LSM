@@ -1,4 +1,3 @@
-csharp
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LMSApp.Data;
