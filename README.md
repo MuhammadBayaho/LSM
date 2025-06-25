@@ -33,3 +33,12 @@ Backend:
 Deployment:
 - GitHub Repository for code versioning and deployment
 
+## Running Tests
+
+Unit tests are located in the `Tests` project. Ensure you have the .NET SDK installed and run:
+
+```bash
+dotnet test
+```
+
+
