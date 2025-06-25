@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <IsPackable>false</IsPackable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
@@ -14,6 +15,17 @@
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LSM.csproj" />
+
+   
+
+    <Compile Remove="obj\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Controllers\**\*.cs" />
+    <Compile Include="..\Services\**\*.cs" />
+    <Compile Include="..\Models\**\*.cs" />
+    <Compile Include="..\DTOs\**\*.cs" />
+    <Compile Include="..\Data\**\*.cs" />
+
   </ItemGroup>
 </Project>
