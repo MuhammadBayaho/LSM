@@ -3,52 +3,45 @@ using LMSApp.Data;
 using LMSApp.Models;
 using LMSApp.DTOs;
 using System.Threading.Tasks;
-<<<<<<< HEAD
-=======
 
 namespace LMSApp.Services
 {
->>>>>>> dbe7ede0baee7e9b1efa70f6d723820a0bc80ad7
-public class AuthService : IAuthService
-{
-    private readonly AppDbContext _context;
-
-    public AuthService(AppDbContext context)
+    public class AuthService : IAuthService
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
 
-    public async Task<string> RegisterAsync(RegisterUserDto dto)
-    {
-        var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
-        if (existingUser != null)
-            return "User already exists";
-
-        var newUser = new User
+        public AuthService(AppDbContext context)
         {
-            FullName = dto.FullName,
-            Email = dto.Email,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-            Role = dto.Role
-        };
+            _context = context;
+        }
 
-        _context.Users.Add(newUser);
-        await _context.SaveChangesAsync();
+        public async Task<string> RegisterAsync(RegisterUserDto dto)
+        {
+            var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
+            if (existingUser != null)
+                return "User already exists";
 
-        return "User registered successfully";
+            var newUser = new User
+            {
+                FullName = dto.FullName,
+                Email = dto.Email,
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                Role = dto.Role
+            };
+
+            _context.Users.Add(newUser);
+            await _context.SaveChangesAsync();
+
+            return "User registered successfully";
+        }
+
+        public async Task<string?> LoginAsync(LoginDto dto)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
+            if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
+                return null;
+
+            return "Login successful"; // Token üretimi eklenebilir
+        }
     }
-
-    public async Task<string?> LoginAsync(LoginDto dto)
-    {
-        var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == dto.Email);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
-            return null;
-
-        return "Login successful"; // Token üretimi eklenebilir
-    }
-<<<<<<< HEAD
 }
-=======
-}
-}
->>>>>>> dbe7ede0baee7e9b1efa70f6d723820a0bc80ad7
