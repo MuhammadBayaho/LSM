@@ -1,7 +1,11 @@
-public class RegisterUserDto
+namespace LMSApp.DTOs
 {
-    public string FullName { get; set; } = "";
-    public string Email { get; set; } = "";
-    public string Password { get; set; } = "";
-    public string Role { get; set; } = "Student";
+    public class RegisterUserDto
+    {
+        public string FullName { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+        public string Role { get; set; } = "Student";
+    }
 }
+

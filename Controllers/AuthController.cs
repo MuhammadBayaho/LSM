@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using LMSApp.Services;
 using LMSApp.DTOs;
-[ApiController]
-[Route("api/[controller]")]
-public class AuthController : ControllerBase
+
+namespace LMSApp.Controllers
 {
-    private readonly IAuthService _authService;
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
+    {
+        private readonly IAuthService _authService;
 
     public AuthController(IAuthService authService)
     {
@@ -25,5 +28,6 @@ public class AuthController : ControllerBase
         var result = await _authService.LoginAsync(dto);
         if (result == null) return Unauthorized("Invalid credentials");
         return Ok(new { message = result });
+    }
     }
 }

@@ -2,6 +2,10 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
+using LMSApp.Data;
+using LMSApp.Services;
+using LMSApp.DTOs;
+using LMSApp.Models;
 
 public class AuthenticationTests
 {

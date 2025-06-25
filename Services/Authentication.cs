@@ -3,6 +3,9 @@ using LMSApp.Data;
 using LMSApp.Models;
 using LMSApp.DTOs;
 using System.Threading.Tasks;
+
+namespace LMSApp.Services
+{
 public class AuthService : IAuthService
 {
     private readonly AppDbContext _context;
@@ -40,4 +43,5 @@ public class AuthService : IAuthService
 
         return "Login successful"; // Token üretimi eklenebilir
     }
+}
 }
