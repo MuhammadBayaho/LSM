@@ -1,0 +1,6 @@
+@LSM2_HostAddress = http://localhost:5121
+
+GET {{LSM2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
