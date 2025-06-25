@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using LMSApp.Data;
+using LMSApp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services

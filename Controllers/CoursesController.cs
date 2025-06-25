@@ -4,10 +4,12 @@ using LMSApp.Data;
 using LMSApp.Models;
 using LMSApp.DTOs;
 
-[ApiController]
-[Route("api/[controller]")]
-public class CoursesController : ControllerBase
+namespace LMSApp.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CoursesController : ControllerBase
+    {
     private readonly AppDbContext _context;
 
     public CoursesController(AppDbContext context)
@@ -56,5 +58,6 @@ public class CoursesController : ControllerBase
         await _context.SaveChangesAsync();
 
         return CreatedAtAction(nameof(GetCourseById), new { id = course.Id }, course);
+    }
     }
 }
