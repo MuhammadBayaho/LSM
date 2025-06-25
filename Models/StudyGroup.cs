@@ -1,4 +1,3 @@
-csharp
 public class StudyGroup
 {
     public int Id { get; set; }
